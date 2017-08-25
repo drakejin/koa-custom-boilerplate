@@ -1,0 +1,13 @@
+{
+  "apps": [{
+    "name": "dbpool",
+    "script": "src/index.js",
+    "watch": ["src"],
+    "ignore_watch" : ["node_modules", "logs"],
+    "watch_options": {
+      "followSymlinks": false
+    },
+    "exec_mode": "cluster",
+    "instances": 0
+  }]
+}

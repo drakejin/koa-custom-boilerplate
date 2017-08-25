@@ -1,0 +1,27 @@
+{
+  "name": "koa-logger-winston",
+  "version": "0.0.2",
+  "description": "Winston logger for Koa",
+  "keywords": [
+    "logging",
+    "koa",
+    "winston",
+    "async"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charly Román <charly@croman.mx>",
+  "contributors": [
+    "Selby Kendrick <selby.kendrick@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selbyk/koa-logger-winston.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "1.1.1"
+  }
+}

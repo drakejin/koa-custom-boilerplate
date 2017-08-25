@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+
+  nginx:
+    container_name: nginx-stg
+    build: ./nginx
+    restart: always
+    ports:
+      - 80
+    links:
+      - nodejs
+      
+  nodejs:
+    container_name: nodejs-stg
+    build: .
+    restart: always
+    command: pm2-docker dbpool.pm2.json
+    ports:
+      - 4000
+    volumes:
+      - ./:/node
+    environment:
+      - NODE_ENV=staging
+      - NODE_PATH=src
+

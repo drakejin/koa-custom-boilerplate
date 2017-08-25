@@ -1,0 +1,35 @@
+{
+  "name": "lambda-for-db-connection",
+  "version": "1.0.0",
+  "description": "this is lambda-for-db-connection repository, just manangement DB Connection and testing lambda code",
+  "main": "src/index.js",
+  "repository": "https://gitlab.com/univbook/lambda-for-db-connection",
+  "author": "drake-jin <dydwls121200@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn stop && pm2 start dbpool.pm2.json",
+    "stop": "pm2 stop dbpool.pm2.json && pm2 stop pm2-http-interface"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.102.0",
+    "bluebird": "^3.5.0",
+    "eslint": "^4.4.1",
+    "eslint-plugin-import": "^2.7.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-error": "^3.1.0",
+    "koa-json-error": "^3.1.2",
+    "koa-logger": "^3.0.1",
+    "koa-logger-winston": "^0.0.2",
+    "koa-mysql": "^1.0.3",
+    "koa-onerror": "^3.1.0",
+    "koa-router": "^7.2.1",
+    "moment-timezone": "^0.5.13",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^11.3.1",
+    "nodemon": "^1.11.0"
+  }
+}
