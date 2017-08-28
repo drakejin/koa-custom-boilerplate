@@ -17,7 +17,7 @@ services:
     restart: always
     command: pm2-docker dbpool.pm2.json
     ports:
-      - 4000
+      - 4000:4000
     volumes:
       - ./:/node
     environment:

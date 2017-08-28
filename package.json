@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn stop && pm2 start dbpool.pm2.json",
-    "stop": "pm2 stop dbpool.pm2.json && pm2 stop pm2-http-interface"
+    "stop": "pm2 stop dbpool.pm2.json"
   },
   "dependencies": {
     "aws-sdk": "^2.102.0",

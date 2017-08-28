@@ -1,0 +1,12 @@
+{
+  "name": "api2Lambda",
+  "description": "This is API2 for external user",
+  "memory": 128,
+  "timeout": 5,
+  "handler": "index.handle",  
+  "runtime": "nodejs6.10",
+  "role": "arn:aws:iam::797313708023:role/api2Lambda_lambda_function",
+  "environment": {
+    "NODE_ENV": "production"
+  }
+}

@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.2"
+    "axios": "^0.16.2",
+    "is-empty": "^1.2.0",
+    "sqlstring": "^2.2.0",
+    "xss": "^0.3.3"
   }
 }

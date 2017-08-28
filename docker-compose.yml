@@ -7,7 +7,7 @@ services:
     build: ./nginx
     restart: always
     ports:
-      - 80
+      - 80:80
     links:
       - nodejs
       
@@ -17,7 +17,7 @@ services:
     restart: always
     command: pm2-docker dbpool.pm2.json
     ports:
-      - 4000
+      - 4000:4000
     volumes:
       - ./:/node
     environment:
